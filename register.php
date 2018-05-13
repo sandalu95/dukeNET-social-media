@@ -103,9 +103,13 @@
 				$profile_pic="assets\images\profile_pics\defaults\my_avatar.png";
 			else if($rand==2)
 				$profile_pic="assets\images\profile_pics\defaults\my_avatar.png";
+			$query=mysqli_query($con,"INSERT INTO users VALUES('','$myname','$username',$year,$month,'$owner','$email','$pass',$date,'$profile_pic','0','0','no',',')");
+			array_push($error_array,"<span style='color:#14C800;'>You are all set! Go ahead and login!</span><br>");
 
-			$query=mysqli_query($con,"INSERT INTO users VALUES('','','',$year,$month,'','','',$date,'','0','0','no',',')");
-			// $query=mysqli_query($con,"INSERT INTO users VALUES('','sandy','sandy','1995','mar','sandalu','sandalu@gmail.com','sdfgh','','','0','0','no',',')");
+			//clear session variables
+			$_SESSION['reg_myname']="";
+			$_SESSION['reg_owner']="";
+			$_SESSION['reg_email']="";
 		}
 	}
  ?>
@@ -184,6 +188,10 @@
 		else if(in_array("Your password must be between 5 and 30 characters<br>", $error_array)) echo "Your password must be between 5 and 30 characters<br>";
 		?>
 		<input type="submit" name="reg_button" value="Register">
+		<br>
+		<?php
+		if(in_array("<span style='color:#14C800;'>You are all set! Go ahead and login!</span><br>", $error_array)) echo "<span style='color:#14C800;'>You are all set! Go ahead and login!</span><br>";
+		?>
 	</form>
 </body>
 </html>
