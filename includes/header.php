@@ -30,7 +30,7 @@
 			<a href="index.php">DukeNET</a>
 		</div>
 		<nav>
-			<a href=#>
+			<a href="<?php echo $userLoggedIn; ?>">
 				<?php 
 					echo $user['my_name'];
 				?>
