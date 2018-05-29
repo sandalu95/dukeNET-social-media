@@ -89,9 +89,9 @@
 			//Profile picture assignment
 			$rand=rand(1,2);//Random number 1 and 2
 			if($rand==1)
-				$profile_pic="assets\images\profile_pics\defaults\my_avatar.png";
+				$profile_pic="assets\images\profile_pics\defaults\head_turqoise.png";
 			else if($rand==2)
-				$profile_pic="assets\images\profile_pics\defaults\my_avatar.png";
+				$profile_pic="assets\images\profile_pics\defaults\head_pete_river.png";
 			$query=mysqli_query($con,"INSERT INTO users VALUES('','$myname','$username',$year,$month,'$owner','$email','$pass','$date','$profile_pic','0','0','no',',')");
 			array_push($error_array,"<span style='color:#14C800;'>You are all set! Go ahead and login!</span><br>");
 
