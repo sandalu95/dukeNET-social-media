@@ -1,5 +1,5 @@
 <?php 
-	ob_start();//Turns output buffering
+	ob_start();//Turns output buffering(dont send outputs otherthan from headers. save in to inner buffer)
 	//to start session inorder to store variables
 	session_start();
 	$timezone=date_default_timezone_set("Asia/Colombo");

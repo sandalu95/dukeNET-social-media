@@ -60,7 +60,7 @@
 					?>" required>
 					<br>
 
-					<select name="reg_year" >
+					<select name="reg_year">
 						<option disabled="" selected="">Year</option>
 						<option value="2010">2010</option>
 						<option value="2011">2011</option>

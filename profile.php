@@ -1,3 +1,4 @@
+<!-- .htaccess file direct to a profile page if we enter a username to a url by clicking the link -->
 <?php 
 	include ("includes/header.php");
 ?>

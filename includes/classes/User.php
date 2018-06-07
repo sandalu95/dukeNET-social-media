@@ -18,7 +18,6 @@ class User{
 		$query=mysqli_query($this->con,"SELECT num_posts FROM users WHERE username='$username'");
 		$row=mysqli_fetch_array($query);
 		return $row['num_posts'];
-
 	}
 
 	public function getMyName(){
@@ -27,5 +26,18 @@ class User{
 		$row=mysqli_fetch_array($query);
 		return $row['my_name'];
 	}
+
+	public function isClosed(){
+		$username=$this->user['username'];
+		$query=mysqli_query($this->con,"SELECT user_closed FROM users WHERE username='$username'");
+		$row=mysqli_fetch_array($query);
+		if($row['user_closed']=='yes'){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 }
+
 ?>

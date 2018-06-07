@@ -20,8 +20,10 @@
 		//year
 		$year=strip_tags($_POST['reg_year']); //remove html tags and assign to variable
 
+
 		//month
 		$month=strip_tags($_POST['reg_month']); //remove html tags and assign to variable
+		
 
 		//myname
 		$owner=strip_tags($_POST['reg_owner']); //remove html tags and assign to variable
