@@ -1,8 +1,8 @@
 <!-- .htaccess file direct to a profile page if we enter a username to a url by clicking the link -->
 <?php 
 	include("includes/header.php");
-	include("includes/classes/User.php");
-	include("includes/classes/Post.php");
+	// include("includes/classes/User.php");
+	// include("includes/classes/Post.php");
 
 	$message_obj=new Message($con,$userLoggedIn);
 
