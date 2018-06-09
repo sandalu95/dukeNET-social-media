@@ -92,7 +92,7 @@ nav a:hover{
 	float: right;
 	width: 75%;
 	z-index: -1;
-	min-height: 160px;
+	min-height: 170px;
 
 }
 
@@ -320,7 +320,7 @@ textarea:focus{
 }
 
 .profile_info_bottom{
-	margin: 10 0 0 7px;
+	margin: 10px 0 0 7px;
 }
 
 #message_textarea{
@@ -355,14 +355,16 @@ textarea:focus{
 	background-color: #3498db;
 	border-color: #2980b9;
 	float: right;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
+	margin-right: 6px;
 }
 
 .message#green{
 	background-color: #2ecc71;
 	border-color: #27ae60;
 	float: left;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
+	margin-right: 6px;
 }
 
 .loaded_messages{
@@ -394,4 +396,40 @@ textarea:focus{
 
 #grey{
 	color:#8c8c8c;
+}
+
+.resultDisplay{
+	padding:5px 5px 0 5px;
+	height: 60px;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.resultDisplay a{
+	float: none;
+}
+
+.resultDisplay:hover{
+	background-color: #EBEBEB;
+	text-decoration: none;
+}
+
+.liveSearchProfilePic img{
+	height: 50px;
+	border-radius: 25px;
+	margin: 1px 12px 0 2px;
+	float: left;
+}
+
+.liveSearchText{
+	background-color: transparent;
+	color: #1E96CA;
+}
+
+.liveSearchText p{
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.tab-content{
+	margin-top: 25px;
 }
