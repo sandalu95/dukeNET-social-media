@@ -1,5 +1,6 @@
 <?php 
 	require 'config/config.php';
+	
 
 	if(isset($_SESSION['username'])){
 		$userLoggedIn=$_SESSION['username'];
@@ -16,13 +17,21 @@
 	<title>Welcome to DukeNET</title>
 
 	<!-- javscrip -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/bootbox.min.js"></script>
+	<script src="assets/js/jquery.jcrop.js"></script>
+	<script src="assets/js/jcrop_bits.js"></script>
+
 
 	<!-- css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/jquery.Jcrop.css" type="text/css" />
+	
 </head>
 <body>
 	<div class="top_bar">
@@ -44,7 +53,7 @@
 			<a href=#>
 				<i class="far fa-bell"></i>
 			</a>
-			<a href=#>
+			<a href="requests.php">
 				<i class="fas fa-users"></i>
 			</a>
 			<a href=#>
