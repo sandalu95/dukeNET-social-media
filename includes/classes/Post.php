@@ -11,9 +11,27 @@ class Post{
 	public function submitPost($body,$user_to){
 		$body=strip_tags($body); //remove html tags
 		$body=mysqli_real_escape_string($this->con,$body); //remove ' and other confusing characters
-		$check_empty=preg_replace('/\s+/','',$body); //Delete all spaces
+		$check_empty = preg_replace('/\s+/', '', $body); //Deltes all spaces 
+      
+		if($check_empty != "") {
 
-		if($check_empty!=""){
+
+			$body_array = preg_split("/\s+/", $body);
+
+			foreach($body_array as $key => $value) {
+
+				if(strpos($value, "www.youtube.com/watch?v=") !== false) {
+
+					$link = preg_split("!&!", $value);
+					$value = preg_replace("!watch\?v=!", "embed/", $link[0]);
+					$value = "<br><iframe width=\'420\' height=\'315\' src=\'" . $value ."\'></iframe><br>";
+					$body_array[$key] = $value;
+
+				}
+
+			}
+			$body = implode(" ", $body_array);
+
 			//current date and time
 			$date_added=date("Y-m-d H:i:s");
 			//Get username
