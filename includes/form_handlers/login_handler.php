@@ -13,6 +13,10 @@
 				$reopen_account=mysqli_query($con,"UPDATE users SET user_closed='no' WHERE email='$email'");
 			}
 			$_SESSION['username']=$username;
+			if($username=="admin"){
+				header("Location:admin/dashboard.php");
+				exit();
+			}
 			header("Location:index.php");
 			exit();
 		}

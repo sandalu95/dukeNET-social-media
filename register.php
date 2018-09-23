@@ -7,10 +7,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>dukeNET</title>
+	<title>WOOFY</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/register.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
 	<?php 
@@ -27,10 +28,12 @@
 
 	?>
 	<div class="wrapper">
-
+		<div class="register_image">
+			<img src="download/3/4.png">
+		</div>
 		<div class="login_box">
 			<div class="login_header">
-				<h1>DukeNET</h1>
+				<h1>WOOFY</h1>
 				Login or Sign Up below!
 			</div>
 			<div id="first">
@@ -50,6 +53,7 @@
 					<br>
 					<a href="#" id="signup" class="signup"> Need an account. Register Here </a>
 				</form>
+				
 			</div>
 			<div id="second">
 				<form action="register.php" method="POST">

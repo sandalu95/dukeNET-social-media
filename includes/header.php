@@ -4,7 +4,6 @@
 	include("includes/classes/Post.php");
 	include("includes/classes/Message.php");
 	include("includes/classes/Notification.php");
-
 	
 
 	if(isset($_SESSION['username'])){
@@ -19,7 +18,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to DukeNET</title>
+	<title>Welcome to Woofy</title>
 
 	<!-- javscrip -->
 
@@ -41,11 +40,10 @@
 <body>
 	<div class="top_bar">
 		<div class="logo">
-			<a href="index.php">DukeNET</a>
+			<a href="index.php">Woofy</a>
 		</div>
 
 		<div class="search">
-
 			<form action="search.php" method="GET" name="search_form">
 				<input type="text" onkeyup="getLiveSearchUsers(this.value, '<?php echo $userLoggedIn; ?>')" name="q" placeholder="Search..." autocomplete="off" id="search_text_input">
 
@@ -60,9 +58,6 @@
 
 			<div class="search_results_footer_empty">
 			</div>
-
-
-
 		</div>
 
 		<nav>

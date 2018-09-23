@@ -1,31 +1,35 @@
 body{
 	line-height: 17px;
-	background-color: #E6E8EB;
+	background-color: #e7ecec;
+	padding-top: 0px;
 }
 
 a{
-	color: #20AAE5;
+	color: #000;
 	text-decoration: none;
 }
 
 .top_bar{
 	width:100%; 
 	min-width: 1050px; /*to stop the size adjustability at 950px*/
-	height:40px;
-	background-color: #20aae5;
-	border-bottom: 0.25em solid #1894ca;
+	height:45px;
+	background-color: #3cc2c3;
+	border-bottom: 0.25em solid #d5f2ef;
 	margin:0 0 10px 0;
 	display: inline-flex; /*flex means flexible. but without putting inline it is block*/
 	position: fixed;
 	z-index: 10; /*to keep bar at top*/
+	padding: 5px;
 }
 
 .logo a{
-	margin-left: 10px;
+	margin-left: 25px;
+	left: 200px;
 	font-size: 150%;
 	position:relative;
 	top: 9px;
-	text-shadow: #73B6E2 0.5px 0.5px 0px;
+	text-shadow: #857d7d 0.5px 0.5px 0px;
+	color: #fff;
 }
 
 a:hover{
@@ -34,14 +38,14 @@ a:hover{
 
 nav{
 	float: right;
-	right: 1px;
+	right: 210px;
 	position: absolute;
 	margin:10px;
 }
 
 nav a{
 	position: relative;
-	color: #FFFFFF;
+	color: #fff;
 	text-decoration: none;
 	font-size: 17px;
 	margin: 0 3px;
@@ -53,12 +57,13 @@ nav a:hover{
 }
 
 .wrapper{
-	margin: 0 auto;
+	
 	top: 50px;
 	position: relative;
 	padding: 0 10px;
-	width: 75%;
+	width: 70%;
 	min-width: 950px;
+	margin:0 auto;
 
 }
 
@@ -67,9 +72,10 @@ nav a:hover{
 	padding: 10px;
 	border:1px solid #D3D3D3;
 	border-radius: 5px;
-	box-shadow: 2px 2px 1px #D3D3D3;
+	box-shadow: 2px 2px 1px #d5f2ef;
 	z-index: -1;
 	color: #555;
+	margin-top: 10px;
 }
 
 .user_details{
@@ -92,9 +98,10 @@ nav a:hover{
 
 .main_column{
 	float: right;
-	width: 75%;
+	width: 70%;
 	z-index: -1;
 	min-height: 170px;
+
 
 }
 
@@ -117,17 +124,19 @@ textarea:focus{
 } 
 
 .post_form input[type="submit"]{
-	width: 11%;
-	height: 60px;
+	width: 10%;
+	height: 50px;
 	border:none;
-	border-radius: 3px;
-	background-color: #3498db;
-	color: #1E75CA;
-	text-shadow: #73B6E2 0.5px 0.5px 0px;
-	font-size: 90%;
+	border-radius: 5px;
+	background-color: #29bdbe;
+	color: #fff;
+	text-shadow: #858582 0.5px 0.5px 0px;
+	font-size: 93%;
 	position: absolute;
 	outline: 0;
 	margin: 0;
+	margin-left: 3px;
+	margin-top: 3px;
 }
 
 .post_form input[type="submit"]:active{
@@ -178,20 +187,20 @@ textarea:focus{
 
 #comment_form input[type="submit"]{
 	border:none;
-	background-color: #20AAE5;
-	color: #156588;
+	background-color: #29bdbe;
+	color: #fff;
 	border-radius: 5px;
 	width: 13%;
 	height: 35px;
 	margin-top: 3px;
 	position:absolute;
-	text-shadow: #73B6E2 0.5px 0.5px 0px;
+	text-shadow: #858582 0.5px 0.5px 0px;
 }
 
 .newsfeedPostOptions{
 	padding:0px;
 	text-decoration:none;
-	color: #20AAE5;
+	color: #23766e;
 	border:none; 
 }
 
@@ -206,7 +215,7 @@ textarea:focus{
 	background-color: transparent;
 	border:none;
 	font-size: 14px;
-	color:#3498db;
+	color:#23766e;
 	padding:0;
 	height:auto;
 	width: auto;
@@ -219,16 +228,20 @@ textarea:focus{
 }
 
 .profile_left{
-	top:-10px;
-	width:150px;
+	top:60px;
+	left: 220px;
+	width:160px;
 	min-width: 100px;
 	height:100vh;
 	float:left;
-	position:relative;
-	background-color: #37B0E9;
-	border-right:10px solid #B3D6FE;
-	color:#CBEAF8;
+	position:fixed;
+	background-color: #22a2a2;
+	border-right:10px solid #d5f2ef;
+	color:#fff;
+	text-shadow:#f8f0ee 0.5px 0.5px 0px;
 	margin-right:20px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 .profile_left img{
@@ -241,7 +254,7 @@ textarea:focus{
 
 .profile_info{
 	display:list-item;
-	background-color: #2980b9;
+	background-color: #038074;
 	width:100%;
 	padding:10px 0 10px 0;
 }
@@ -268,11 +281,11 @@ textarea:focus{
 }
 
 .info{
-	background-color: #3498db;
+	background-color: #29bdbe;
 }
 
 .deep_blue{
-	background-color: #004340;
+	background-color: #403e3e;
 }
 
 .profile_left input[type="submit"]{
@@ -282,6 +295,7 @@ textarea:focus{
 	margin: 7px 0 0 7px;
 	border:none;
 	color:#fff;
+	background-color: #075049;
 }
 
 #accept_button{
@@ -317,8 +331,9 @@ textarea:focus{
 .profile_main_column{
 	min-width: 675px;
 	float: left;
-	width: 70%;
+	width: 80%;
 	z-index: -1;
+	margin-left: 400px;
 }
 
 .profile_info_bottom{
@@ -424,7 +439,7 @@ textarea:focus{
 
 .liveSearchText{
 	background-color: transparent;
-	color: #1E96CA;
+	color: #23766e;
 }
 
 .liveSearchText p{
@@ -485,13 +500,16 @@ textarea:focus{
 }
 
 .search{
-	margin: 8px 0 0 15%;
+	margin: 5px 0 0 18%;
+
 }
 
 .search #search_text_input{
 	border:thin solid #E5E5E5;
+	border-radius: 4px;
+	padding-left: 5px;
 	float: left;
-	height: 23px;
+	height: 24px;
 	outline:0;
 	width: 100px;
 	border-top-right-radius:0;
@@ -501,18 +519,21 @@ textarea:focus{
 .button_holder{
 	background-color: #F1F1F1;
 	border:thin solid #E5E5E5;
+	margin-left: 1px;
+	padding: 3px;
 	cursor: pointer;
 	float:left;
-	height: 23px;
+	height: 24px;
 	text-align: center;
 	width: 50px;
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
 }
 
 .button_holder img{
-	margin-top: 1px;
-	width: 20px;
+	
+	height: 19px;
+	width: 18px;
 }
 
 .search_results{
@@ -528,7 +549,7 @@ textarea:focus{
 	height: 30px;
 	border:1px solid #DADADA;
 	border-top: none;
-	background-color: #20AAE5;
+	background-color: #3cc2c3;
 	text-align: center;
 }
 
@@ -563,7 +584,7 @@ textarea:focus{
 }
 
 .small_profile_pic {
-	height: 55px;
+	height: 70px;
     margin: 1px 12px 0 2px;
     float: left;
 }
@@ -596,4 +617,14 @@ textarea:focus{
 	max-width: 100%;
 	display: block;
 	margin: 5px auto;
+}
+
+input[type="file"]{
+	margin-bottom: 3px;
+}
+
+.btn-danger {
+    color: #000;
+    background-color: #d9534f1f;
+    border-color: #d43f3a;
 }

@@ -18,7 +18,7 @@
 
 	if(isset($_POST['remove_friend'])) {
 		$user = new User($con, $userLoggedIn);
-		$user->removeFriend($username);
+		$user->removerFriend($username);
 	}
 
 	if(isset($_POST['add_friend'])) {
@@ -169,7 +169,7 @@
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary" name="post_button" id="submit_profile_post">Post</button>
+		        <button type="button" class="btn btn-info" name="post_button" id="submit_profile_post">Post</button>
 		      </div>/
 		    </div>
 		  </div>
