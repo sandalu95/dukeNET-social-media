@@ -229,7 +229,8 @@ class Post{
 					$date_time_now = date("Y-m-d H:i:s");
 					$start_date = new DateTime($date_time); //Time of post
 					$end_date = new DateTime($date_time_now); //Current time
-					$interval = $start_date->diff($end_date); //Difference between dates 
+					$interval = $start_date->diff($end_date);
+					echo "$interval"; //Difference between dates 
 					if($interval->y >= 1) {
 						if($interval == 1)
 							$time_message = $interval->y . " year ago"; //1 year ago

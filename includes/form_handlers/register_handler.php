@@ -9,8 +9,10 @@
 	$pass2=""; //Confirm password
 	$date=""; //SignUp date
 	$error_array=array(); //holds error msgs
+	$protype="";
 
 	if(isset($_POST['reg_button'])){ //to check whether register button clicked
+
 		//myname
 		$myname=strip_tags($_POST['reg_myname']); //remove html tags and assign to variable
 		$myname=str_replace(' ','',$myname); // remove spaces
@@ -94,7 +96,7 @@
 				$profile_pic="assets/images/profile_pics/defaults/head_turqoise.png";
 			else if($rand==2)
 				$profile_pic="assets/images/profile_pics/defaults/head_sun_flower.png";
-			$query=mysqli_query($con,"INSERT INTO users VALUES('','$myname','$username',$year,$month,'$owner','$email','$pass','$date','$profile_pic','0','0','no',',')");
+			$query=mysqli_query($con,"INSERT INTO users VALUES('','$myname','$username',$year,$month,'$owner','$email','$pass','$date','$profile_pic','0','0','no',',','$protype')");
 			array_push($error_array,"<span style='color:#14C800;'>You are all set! Go ahead and login!</span><br>");
 
 			//clear session variables

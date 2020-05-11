@@ -246,6 +246,111 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-4" style="margin-left: auto;margin-right: auto;">
+                            <div class="card card-chart">
+                                <div class="card-header card-header-danger">
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Return vs. New visitors</h4>
+                                    <table border="1px solid black" >
+                                        <tr>
+                                            <th>User Type</th>
+                                            <th>Percentage from sessions</th>
+                                        </tr>
+                                        <tr>
+                                            <td>New Visitors</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>New Users</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <!-- <i class="material-icons">access_time</i> updated 4 minutes ago -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="margin-left: auto;margin-right: auto;">
+                            <div class="card card-chart">
+                                <div class="card-header card-header-danger">
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Device Performance</h4>
+                                    <table border="1px solid black">
+                                        <tr>
+                                            <th>Device Type</th>
+                                            <th>Sessions</th>
+                                            <th>New Sessions</th>
+                                            <th>Users</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Mobile</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Desktop</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tablet</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <!-- <i class="material-icons">access_time</i> updated 4 minutes ago -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="margin-left: auto;margin-right: auto;">
+                            <div class="card card-chart">
+                                <div class="card-header card-header-danger">
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Popular Post Content Types</h4>
+                                    <table border="1px solid black">
+                                        <tr>
+                                            <th>Content Type</th>
+                                            <th>% from total posts</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Text</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Images</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Videos</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <!-- <i class="material-icons">access_time</i> updated 4 minutes ago -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             

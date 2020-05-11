@@ -17,6 +17,9 @@
 				header("Location:admin/dashboard.php");
 				exit();
 			}
+			if($username=="kennel"){
+				header("Location:association/group.php");
+			}
 			header("Location:index.php");
 			exit();
 		}
